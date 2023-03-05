@@ -1,0 +1,151 @@
+.operatingbox{
+    background-color: rgb(50, 50, 50);
+    border-radius: 10px;
+    border: 3px solid black;
+}
+.gridcontainer{
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 25px;
+    column-gap: 5px;
+}
+.calc-body{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 12px;
+    column-gap: 10px;
+    width: 90%;
+    margin: auto;
+}
+.calc-item{
+    margin: 8px 0;
+    border-radius: 9px;
+    background-color: rgb(91, 91, 91);
+}
+.calc-item .btn{
+    color: #fff;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: rgb(91, 91, 91);
+    font-size: 25px;
+    transition: all 0.2s;
+    box-shadow: 1px 2px 1px black;
+    transition: all 0.5s;
+    transform: translateY(-6px);
+}
+.pressed{
+    transform: translateY(0) !important;
+}
+.calc-item .btn:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(116, 116, 116);
+}
+.calc-item .goldenbtn:hover{
+    color: rgb(255, 255, 255) !important;
+}
+.power{
+    position: relative;
+}
+.power::after{
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    top: 9px;
+    left: 3px;
+    right: -12px;
+    background-color: #ffffff63;
+}
+.calc-screen{
+    grid-column: 1/span 3;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: left;
+    margin: 0 auto 0 auto;
+    height: 150px;
+    background-color: rgb(198, 198, 198);
+    position: relative;
+}
+.zerobtn{
+    grid-column: 1/span 2;
+}
+.result-screen{
+    width: fit-content;
+    font-size: 50px;
+    color: black;
+    overflow: hidden;
+}
+.calc-screen::before{
+    left: var(--screen-width);
+    content: "|";
+    color: black;
+    font-size: 75px;
+    font-weight: 200;
+    bottom: 0;
+    top: 0;
+    position: absolute;
+    animation: faded 1.3s infinite;
+}
+
+.calc-title{
+    grid-column: 1/span 3;
+    margin-top: 8px;
+    margin-bottom:5px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calc-title h5{
+    margin: 0;
+    font-size: 20px;
+    color: rgb(225, 225, 225);
+    font-weight: 400;
+    letter-spacing: 0.8px;
+}
+.goldenbtn{
+    color: black !important;
+    background-color: rgb(219, 177, 97) !important;
+  }
+@keyframes faded {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+@media screen and (max-width:2000px) {
+    .operatingbox{
+        width: 40%;
+        margin:auto
+    }
+}
+@media screen and (max-width:992px) {
+    .operatingbox{
+        width: 60%;
+        margin:auto
+    }
+}
+@media screen and (max-width:768px) {
+    .operatingbox{
+        width: 80%;
+        margin:auto
+    }
+}
+@media screen and (max-width:600px) {
+    .operatingbox{
+        width: 90%;
+        margin:auto
+    }
+}
+@media screen and (max-width:400px) {
+ .container{
+    padding: 5px !important;
+ }
+ .operatingbox{
+    width: 100%;
+    margin:auto
+}
+}

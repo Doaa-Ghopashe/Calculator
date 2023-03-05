@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  background: linear-gradient(120deg , rgb(181, 47, 20),rgb(182, 65, 7),rgb(255, 136, 0),rgb(255, 217, 0));
+}
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
+}

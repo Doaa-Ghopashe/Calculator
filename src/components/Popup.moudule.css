@@ -1,0 +1,17 @@
+.errorpage{
+    background-color: rgba(0, 0, 0, 0.315);
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    inset: 0;
+    z-index: 100;
+}
+.errorbox{
+    background-color: #fff;
+    border-radius: 10px;
+    color: black;
+    border:1px solid black;
+    padding: 12px 6px;
+}
